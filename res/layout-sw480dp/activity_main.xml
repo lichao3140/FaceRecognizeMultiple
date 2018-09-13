@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+    
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="480dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:padding="@dimen/lineSize" >
+
+        <com.frm.cn.CameraView
+            android:id="@+id/surfaceViewHW"
+            android:layout_width="1px"
+            android:layout_height="1px" />
+
+        <com.frm.cn.CameraView
+            android:id="@+id/surfaceViewKJ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.frm.cn.OverlayerView
+            android:id="@+id/overlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTitle"
+        android:layout_above="@+id/frameLayout" >
+    <TextView
+        android:id="@+id/txtPlease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/line_frame"
+        android:textSize="@dimen/msgTextSize"
+        android:text="请将摄像头对准人脸！"
+        android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frameLayout" >
+
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/gDeepGreen"
+            android:textSize="@dimen/msgTextSize" />
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtMsg"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/gDeepGreen" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_menu" />
+
+</RelativeLayout>

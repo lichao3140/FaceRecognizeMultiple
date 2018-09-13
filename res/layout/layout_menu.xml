@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_menu_up" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/lLayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnFaceRec"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="@string/txtMenuFaceRec"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUserManage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="@string/txtMenuUserManage"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnRecordManage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="@string/txtMenuRecordManage"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSystemConfig"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="@string/txtMenuSystemConfig"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSystemInfo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="@string/txtMenuSystemInfo"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</TableLayout>

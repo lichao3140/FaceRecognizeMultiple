@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTitle"
+        android:background="@drawable/bg_line"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_ok_normal"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/txtSearchByUserId"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtSearchByNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:ems="18"
+                    android:hint="100%"
+                    android:inputType="text"
+                    android:maxLength="18"
+                    android:textColor="@color/black" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/txtSearchByUserName"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtSearchByName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:ems="16"
+                    android:hint="nam%"
+                    android:inputType="text"
+                    android:maxLength="8"
+                    android:textColor="@color/black" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/btn_search" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvUsers"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="90"
+                android:background="@color/white"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1px"
+                android:footerDividersEnabled="true"
+                 >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_ok_normal"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/ivPageUp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/btn_menu_preview" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="50" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="当前第   "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtPageIndex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="  页    / 总计  "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtPageCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="100"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="  页   / 总计  "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtRecordCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="1000"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="  条记录"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="50" />
+
+                <ImageView
+                    android:id="@+id/ivPageDown"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/btn_menu_next" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="@drawable/table_frame_gray"
+                android:orientation="horizontal"
+                android:padding="1dp" >
+
+                <ImageView
+                    android:id="@+id/ivUserImg"
+                    android:layout_width="300dp"
+                    android:layout_height="225dp"
+                    android:src="@drawable/nobody" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableRow
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/table_frame_gray"
+                        android:gravity="center_vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtUserId"
+                            android:textSize="@dimen/contextSize" />
+
+                        <EditText
+                            android:id="@+id/edtUserId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:textSize="@dimen/contextSize" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/table_frame_gray"
+                        android:gravity="center_vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtUserName"
+                            android:textSize="@dimen/contextSize" />
+
+                        <EditText
+                            android:id="@+id/edtUserName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:textSize="@dimen/contextSize" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/table_frame_gray"
+                        android:gravity="center_vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtCreateTime"
+                            android:textSize="@dimen/contextSize" />
+
+                        <EditText
+                            android:id="@+id/edtCreateTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:textSize="@dimen/contextSize" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

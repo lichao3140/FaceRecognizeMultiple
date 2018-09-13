@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FaceRecognizeMultiple</string>
+    <string name="txtSysName">人证合一验证系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtSwipeID2Card">请刷二代身份证！</string>
+    <string name="txtIdeImage">证件照片：</string>
+    <string name="txtCamImage">现场照片：</string>
+    <string name="txtName">姓    名：</string>
+    <string name="txtSex">性别：</string>
+    <string name="txtNational">民族：</string>
+    <string name="txtBirth">出生：</string>
+    <string name="txtIdeNo">证件号：</string>
+    <string name="txtAddress">住址：</string>
+    <string name="txtDepartment">发证机关：</string>
+    <string name="txtValidDate">证件有效期：</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="txtPleaseMsg">请将摄像头对准人脸！</string>
+    <string name="txtConfig">参数设置</string>
+    <string name="txtFirstLimit">识别门限：</string>
+    <string name="txtSecondLimit">第二门限：</string>
+    <string name="txtFirLimit">( 65 - 100 )</string>
+    <string name="txtSecstLimit">( 60 - 99 )</string>
+    <string name="title_activity_config">系统设置</string>
+    <string name="title_activity_detect">DetectActivity</string>
+    <string name="txtOK">确&#160;&#160;&#160;&#160;定</string>
+    <string name="txtCancel">取&#160;&#160;&#160;&#160;消</string>
+    <string name="txtBack">返    回</string>
+    <string name="txtNext">下一步</string>
+    <string name="txtSetLimit">门限：</string>
+    <string name="txtSave">保 存 </string>
+    <string name="txtExit">退 出 </string>
+    <string name="txtPass">验证通过</string>
+    <string name="txtRunning">正在验证...</string>
+    <string name="txtSimilary">相似度：%1%</string>
+    <string name="txtImageSize">图像大小：</string>
+    <string name="txtSysTitle">人脸身份验证系统</string>
+    <string name="txtVideo">视频：</string>
+    <string name="txtHorMirrorVideo">水平镜像视频</string>
+    <string name="txtThreshold">验证门限：</string>
+    <string name="txtUseThreshold">设置门限</string>
+    <string name="txtCameraSet">摄像头设置...</string>
+    <string name="txtRecordManage">纪录管理...</string>
+    <string name="txtIdentityInfo">身份证信息</string>
+    <string name="txtIdentityImg">身份证图像：</string>
+    <string name="txtValidatenfo">实时图像：</string>
+    <string name="txtIdentityImage">证件照片</string>
+    <string name="txtVideoImage">现场照片</string>
+    <string name="txtIdentityNo">身份证：</string>
+    <string name="txtSimilarity">相似度：</string>
+    <string name="txtLongitude">经度：</string>
+    <string name="txtLatitude">纬度：</string>
+    <string name="txtNoImage">No picture.</string>
+    <string name="txtCameraBusy">The camera has been used by other application.</string>
+    <string name="txtCameraFail">The camera initialize fail.</string>
+    <string name="title_activity_record">识别记录</string>
+    <string name="txtTbName">名称</string>
+    <string name="txtTbRecordTime">纪录时间</string>
+    <string name="title_activity_identity">IdentityActivity</string>
+
+    <!-- Menu -->
+    <string name="txtMenuFaceRec">人脸识别</string>
+    <string name="txtMenuUserManage">用户管理</string>
+    <string name="txtMenuRecordManage">记录管理</string>
+    <string name="txtMenuSystemConfig">系统设置</string>
+    <string name="txtMenuSystemInfo">系统信息</string>
+    <string name="txtMenuSystemTest">软件测试</string>
+
+    <!-- MainActivity -->
+    <string name="titleFaceRecognize">人脸识别</string>
+
+    <!-- UserRegisterActivity -->
+    <string name="titleUserRegister">用户注册</string>
+    <string name="txtRegisterUserInfo">注册用户信息</string>
+    <string name="txtUId">用户编号:</string>
+    <string name="txtUserId">用户工号:</string>
+    <string name="txtUserName">用户名称:</string>
+    <string name="txtStartRegister">开始注册</string>
+    <string name="txtRestartRegister">重新注册</string>
+    <string name="txtCommitRegister">提交注册</string>
+    <string name="txtRegisterTimeOut">注册超时！</string>
+    <string name="titleUserFeatureEdit">修改用户模型</string>
+
+    <!-- InportRegisterActivity -->
+    <string name="txtInportDir">导入目录：</string>
+    <string name="txtInportSize">导入数量：</string>
+    <string name="txtInportProgress">导入进度：</string>
+    <string name="txtInportImage">导入</string>
+
+    <!-- RegisterInputActivity -->
+    <string name="titleRegisterInput">注册信息</string>
+    <string name="titleUserInfoEdit">修改用户信息</string>
+    <string name="titleUserAllEdit">修改用户信息和模型</string>
+    <string name="txtEditUser">修改</string>
+
+    <!-- RegisterResultActivity -->
+    <string name="titleRegisterComplete">注册完成</string>
+    <string name="txtRegisterSuccess">注册成功</string>
+    <string name="txtRegisterComplete">完成</string>
+    <string name="titleEditComplete">修改完成</string>
+
+    <!-- UserManageActivity -->
+    <string name="titleUserManage">用户管理</string>
+    <string name="txtUserInfo">用户信息</string>
+    <string name="txtOtherUserInfo">其他用户信息</string>
+    <string name="txtCreateTime">创建时间：</string>
+    <string name="txtTitleId">记录编号</string>
+    <string name="txtTitleUserId">用户工号</string>
+    <string name="txtTitleName">用户名称</string>
+    <string name="txtTitleCreateTime">创建时间</string>
+    <string name="txtUserAdd">添加用户</string>
+    <string name="txtUserDelete">删除用户</string>
+    <string name="txtUserClear">清空用户</string>
+    <string name="txtUserEdit">修改用户</string>
+    <string name="txtUserSearch">查询用户</string>
+    <string name="txtFaceRegister">人脸注册</string>
+    <string name="txtImageRegister">图像注册</string>
+    <string name="txtUserInport">导入用户</string>
+    <string name="txtUserExport">导出用户</string>
+    <string name="txtUserBackup">备份用户</string>
+    <string name="txtUserRestore">还原用户</string>
+
+    <!-- UserEditActivity -->
+    <string name="title_activity_user_edit">UserEditActivity</string>
+    <string name="titleUserEdit">用户信息修改</string>
+    <string name="txtEdit">修改</string>
+    <string name="txtUserEditType">选择修改类型</string>
+    <string name="txtEditUserInfo">修改用户信息</string>
+    <string name="txtEditUserFeature">修改用户模板</string>
+    <string name="txtEditUserAll">修改用户信息和模型</string>
+
+    <!-- UserDeleteActivity -->
+    <string name="title_activity_user_delete">UserDeleteActivity</string>
+    <string name="titleUserDelete">用户删除</string>
+    <string name="txtDelete">删除</string>
+
+    <!-- UserClearActivity -->
+    <string name="title_activity_user_clear">UserClearActivity</string>
+    <string name="titleUserClear">用户清空</string>
+    <string name="txtClear">清空</string>
+    <string name="txtUserCount">用户总数：</string>
+    <string name="txtCurrentIndex">当前进度：</string>
+
+    <!-- UserSearchActivity -->
+    <string name="title_activity_user_search">UserSearchActivity</string>
+    <string name="titleUserSearch">用户查询</string>
+    
+    <!-- UserExportActivity -->
+    <string name="titleUserExport">用户导出</string>
+    <string name="txtExportDir">导出目录：</string>
+    <string name="txtExportSize">导出数量：</string>
+    <string name="txtExportRecord">导出记录：</string>
+    <string name="txtExportModel">导出模型：</string>
+    <string name="txtExportProgress">导出进度：</string>
+    <string name="txtExportUser">导出</string>
+    
+    <!-- UserInportActivity -->
+    <string name="titleUserInport">用户导入</string>
+    <string name="txtInportUser">导入</string>
+
+    <!-- RecognizeResultActivity -->
+    <string name="title_activity_register_result">RegisterResultActivity</string>
+    <string name="txtRecordId">记录编号:</string>
+    <string name="titleRecognizeResult">识别结果</string>
+    <string name="txtUserCardNum">用户卡号:</string>
+    <string name="txtRecognizeResult">识别结果:</string>
+    <string name="txtRecognizeTime">识别时间:</string>
+    <string name="txtUserImage">注册图像</string>
+    <string name="txtRecognizeImage">识别图像</string>
+    <string name="txtRecognizeSuccess">识别成功</string>
+    <string name="txtClose">关闭</string>
+
+    <!-- RecognizeConfigActivity -->
+    <string name="titleRecognizeConfig">系统配置</string>
+
+    <!-- SystemInfoActivity -->
+    <string name="titleSystemInfo">系统信息</string>
+
+    <!-- RecordManageActivity -->
+    <string name="titleRecordManage">记录管理</string>
+    <string name="title_activity_register_input">RegisterInputActivity</string>
+    <string name="title_activity_inport_register">InportRegisterActivity</string>
+    <string name="txtRecResult">识别分值：</string>
+    <string name="txtSearchByUserId">用户工号：</string>
+    <string name="txtSearchByUserName">用户名称：</string>
+    <string name="txtSearchBySim">相似度：</string>
+
+    <!-- RecordListActivity -->
+    <string name="title_activity_record_list">RecordListActivity</string>
+    <string name="txtClearAllRecords">清空所有记录</string>
+    <string name="txtClearCurrentRecords">删除当前记录</string>
+
+    <!-- InformationActivity -->
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="titleInformation">系统信息</string>
+    <string name="txtDeviceSerial">设备序列号：</string>
+    <string name="txtSoftVersion">软件版本号：</string>
+    <string name="title_activity_set_device_serial">SetDeviceSerialActivity</string>
+    <string name="txtInputKey">登录秘钥：</string>
+    <string name="txtLoginKey">请输入登录秘钥</string>
+    <string name="txtLoginKeyError">登录秘钥不正确！</string>
+
+    <!-- SetDeviceSerialActivity -->
+    <string name="titleDevSerialSet">设备序列号设置</string>
+    <string name="txtDevSnEmpty">设备序列号不能为空！</string>
+    <string name="txtDevSnInvalid">不是有效的设备序列号！</string>
+    <string name="txtDevSnSuccess">设备序列号设置成功！</string>
+    <string name="txtDevSnFail">设备序列号设置失败！</string>
+
+    <!-- CameraTestActivity -->
+    <string name="title_activity_camera_test">CameraTestActivity</string>
+    <string name="titleCameraTest">摄像头测试</string>
+
+    <!-- File Dialog -->
+    <string name="number_picker">Number Picker</string>
+    <string name="file_opener">File Opener</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="back">返回</string>
+    <string name="title_activity_user_export">UserExportActivity</string>
+
+</resources>

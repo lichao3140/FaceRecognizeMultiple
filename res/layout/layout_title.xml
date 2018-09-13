@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/btn_ok_normal"
+    android:orientation="horizontal"
+    >
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"
+                android:background="@drawable/btn_ok"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnTitle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"
+                android:background="@drawable/btn_ok"
+                android:text="@string/titleFaceRecognize"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"
+                android:background="@drawable/btn_ok"
+                android:textColor="@color/white" />
+</LinearLayout>

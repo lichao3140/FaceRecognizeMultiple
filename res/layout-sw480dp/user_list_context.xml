@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+     >
+    <TextView android:id="@+id/txtId"
+        android:layout_weight="20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contextSize"
+        android:gravity="center_horizontal"
+        android:text="1000000001"
+        />
+    <View 
+        android:layout_width="1px" 
+        android:layout_height="fill_parent" 
+        android:background="#B8B8B8" 
+         />
+    <TextView android:id="@+id/txtUserId"
+        android:layout_weight="20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contextSize"
+        android:gravity="center_horizontal"
+        android:text="88888888"
+        />
+    <View 
+        android:layout_width="1px" 
+        android:layout_height="fill_parent" 
+        android:background="#B8B8B8" 
+         />
+    <TextView android:id="@+id/txtUserName"
+        android:layout_weight="20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contextSize"
+        android:gravity="center_horizontal"
+        android:text="zoufeng"
+        />
+    <View 
+        android:layout_width="1px" 
+        android:layout_height="fill_parent" 
+        android:background="#B8B8B8" 
+         />
+    <TextView android:id="@+id/txtCreateTime"
+        android:layout_weight="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contextSize"
+        android:gravity="center_horizontal"
+        android:text="2018-03-09 15:30:30"
+        />
+
+</LinearLayout>

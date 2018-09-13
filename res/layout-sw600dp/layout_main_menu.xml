@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_menu"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_menu_up" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trLayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/btnRecognizeManage"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="识别管理"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnUserManage"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="用户管理"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnRecordManage"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="记录管理"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnConfigManage"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="参数配置"
+            android:textColor="@color/white" />
+        
+        <Button
+            android:id="@+id/btnSystemManage"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="30"
+            android:background="@drawable/btn_ok"
+            android:text="系统信息"
+            android:textColor="@color/white" />
+    </TableRow>
+
+</TableLayout>
